@@ -1,0 +1,467 @@
+C:\Users\bbalt\AppData\Local\Programs\Python\Python313\python.exe C:\Users\bbalt\Downloads\endreport\ScientificTextRetrieval\dataexp2.py 
+--- Configuration ---
+Script base folder: C:\Users\bbalt\Downloads\endreport\ScientificTextRetrieval
+Looking for documents in: C:\Users\bbalt\Downloads\endreport\ScientificTextRetrieval\longeval_sci_training_2025_abstract\documents
+
+Defining data schema...
+Defining helper functions...
+
+--- Starting Main Processing Loop ---
+Found 21 .jsonl files to process.
+
+=============== Processing file 1/21: documents_000001.jsonl ===============
+---> Starting to read documents_000001.jsonl ...
+File Size: 180.70 MB
+<--- Finished reading documents_000001.jsonl. Read 100000 documents in 0.55s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.72s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 79438
+
+    Final count for language detection: Processed 79438/79438 abstracts.
+<--- Finished Language Detection Step. Time: 351.56s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.06s.
+
+--- Language Summary for: documents_000001.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          79438
+      - English ('en'):                       62392
+      - Non-English (specific):               15537
+      - Null/short/empty:                       534
+      - Undetermined (langdetect err):          975
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000001.jsonl. Total time for file: 354.89s ---
+
+=============== Processing file 2/21: documents_000002.jsonl ===============
+---> Starting to read documents_000002.jsonl ...
+File Size: 179.48 MB
+<--- Finished reading documents_000002.jsonl. Read 100000 documents in 0.64s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.69s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 79185
+
+    Final count for language detection: Processed 79185/79185 abstracts.
+<--- Finished Language Detection Step. Time: 356.32s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.08s.
+
+--- Language Summary for: documents_000002.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          79185
+      - English ('en'):                       60663
+      - Non-English (specific):               17039
+      - Null/short/empty:                       578
+      - Undetermined (langdetect err):          905
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000002.jsonl. Total time for file: 359.73s ---
+
+=============== Processing file 3/21: documents_000003.jsonl ===============
+---> Starting to read documents_000003.jsonl ...
+File Size: 179.36 MB
+<--- Finished reading documents_000003.jsonl. Read 100000 documents in 0.90s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.89s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 77835
+
+    Final count for language detection: Processed 77835/77835 abstracts.
+<--- Finished Language Detection Step. Time: 364.76s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.06s.
+
+--- Language Summary for: documents_000003.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          77835
+      - English ('en'):                       57997
+      - Non-English (specific):               18265
+      - Null/short/empty:                       624
+      - Undetermined (langdetect err):          949
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000003.jsonl. Total time for file: 368.61s ---
+
+=============== Processing file 4/21: documents_000004.jsonl ===============
+---> Starting to read documents_000004.jsonl ...
+File Size: 175.44 MB
+<--- Finished reading documents_000004.jsonl. Read 100000 documents in 0.66s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.79s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 77128
+
+    Final count for language detection: Processed 77128/77128 abstracts.
+<--- Finished Language Detection Step. Time: 358.03s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.07s.
+
+--- Language Summary for: documents_000004.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          77128
+      - English ('en'):                       56995
+      - Non-English (specific):               18486
+      - Null/short/empty:                       565
+      - Undetermined (langdetect err):         1082
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000004.jsonl. Total time for file: 361.55s ---
+
+=============== Processing file 5/21: documents_000005.jsonl ===============
+---> Starting to read documents_000005.jsonl ...
+File Size: 173.22 MB
+<--- Finished reading documents_000005.jsonl. Read 100000 documents in 0.70s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.60s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 75511
+
+    Final count for language detection: Processed 75511/75511 abstracts.
+<--- Finished Language Detection Step. Time: 364.22s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.07s.
+
+--- Language Summary for: documents_000005.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          75511
+      - English ('en'):                       54305
+      - Non-English (specific):               19597
+      - Null/short/empty:                       632
+      - Undetermined (langdetect err):          977
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000005.jsonl. Total time for file: 367.58s ---
+
+=============== Processing file 6/21: documents_000006.jsonl ===============
+---> Starting to read documents_000006.jsonl ...
+File Size: 175.82 MB
+<--- Finished reading documents_000006.jsonl. Read 100000 documents in 0.63s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.75s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 77059
+
+    Final count for language detection: Processed 77059/77059 abstracts.
+<--- Finished Language Detection Step. Time: 363.35s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.07s.
+
+--- Language Summary for: documents_000006.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          77059
+      - English ('en'):                       55104
+      - Non-English (specific):               20322
+      - Null/short/empty:                       679
+      - Undetermined (langdetect err):          954
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000006.jsonl. Total time for file: 366.80s ---
+
+=============== Processing file 7/21: documents_000007.jsonl ===============
+---> Starting to read documents_000007.jsonl ...
+File Size: 172.68 MB
+<--- Finished reading documents_000007.jsonl. Read 100000 documents in 0.70s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.60s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 73371
+
+    Final count for language detection: Processed 73371/73371 abstracts.
+<--- Finished Language Detection Step. Time: 347.24s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.06s.
+
+--- Language Summary for: documents_000007.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          73371
+      - English ('en'):                       52376
+      - Non-English (specific):               19411
+      - Null/short/empty:                       694
+      - Undetermined (langdetect err):          890
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000007.jsonl. Total time for file: 350.61s ---
+
+=============== Processing file 8/21: documents_000008.jsonl ===============
+---> Starting to read documents_000008.jsonl ...
+File Size: 180.08 MB
+<--- Finished reading documents_000008.jsonl. Read 100000 documents in 0.56s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.70s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 76351
+
+    Final count for language detection: Processed 76351/76351 abstracts.
+<--- Finished Language Detection Step. Time: 373.64s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.07s.
+
+--- Language Summary for: documents_000008.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          76351
+      - English ('en'):                       51033
+      - Non-English (specific):               23773
+      - Null/short/empty:                       716
+      - Undetermined (langdetect err):          829
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000008.jsonl. Total time for file: 376.97s ---
+
+=============== Processing file 9/21: documents_000009.jsonl ===============
+---> Starting to read documents_000009.jsonl ...
+File Size: 165.23 MB
+<--- Finished reading documents_000009.jsonl. Read 100000 documents in 0.66s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.66s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 78861
+
+    Final count for language detection: Processed 78861/78861 abstracts.
+<--- Finished Language Detection Step. Time: 347.99s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.07s.
+
+--- Language Summary for: documents_000009.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          78861
+      - English ('en'):                       60551
+      - Non-English (specific):               17002
+      - Null/short/empty:                       534
+      - Undetermined (langdetect err):          774
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000009.jsonl. Total time for file: 351.38s ---
+
+=============== Processing file 10/21: documents_000010.jsonl ===============
+---> Starting to read documents_000010.jsonl ...
+File Size: 182.13 MB
+<--- Finished reading documents_000010.jsonl. Read 100000 documents in 0.64s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.89s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 78933
+
+    Final count for language detection: Processed 78933/78933 abstracts.
+<--- Finished Language Detection Step. Time: 398.96s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.06s.
+
+--- Language Summary for: documents_000010.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          78933
+      - English ('en'):                       54473
+      - Non-English (specific):               22630
+      - Null/short/empty:                       545
+      - Undetermined (langdetect err):         1285
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000010.jsonl. Total time for file: 402.56s ---
+
+=============== Processing file 11/21: documents_000011.jsonl ===============
+---> Starting to read documents_000011.jsonl ...
+File Size: 181.43 MB
+<--- Finished reading documents_000011.jsonl. Read 100000 documents in 0.60s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.80s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 77830
+
+    Final count for language detection: Processed 77830/77830 abstracts.
+<--- Finished Language Detection Step. Time: 376.00s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.06s.
+
+--- Language Summary for: documents_000011.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          77830
+      - English ('en'):                       53085
+      - Non-English (specific):               23037
+      - Null/short/empty:                       599
+      - Undetermined (langdetect err):         1109
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000011.jsonl. Total time for file: 379.46s ---
+
+=============== Processing file 12/21: documents_000012.jsonl ===============
+---> Starting to read documents_000012.jsonl ...
+File Size: 180.46 MB
+<--- Finished reading documents_000012.jsonl. Read 100000 documents in 0.62s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.71s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 76210
+
+    Final count for language detection: Processed 76210/76210 abstracts.
+<--- Finished Language Detection Step. Time: 361.97s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.06s.
+
+--- Language Summary for: documents_000012.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          76210
+      - English ('en'):                       51183
+      - Non-English (specific):               23139
+      - Null/short/empty:                       646
+      - Undetermined (langdetect err):         1242
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000012.jsonl. Total time for file: 365.36s ---
+
+=============== Processing file 13/21: documents_000013.jsonl ===============
+---> Starting to read documents_000013.jsonl ...
+File Size: 172.03 MB
+<--- Finished reading documents_000013.jsonl. Read 100000 documents in 0.74s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.76s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 72870
+
+
+    Final count for language detection: Processed 72870/72870 abstracts.
+<--- Finished Language Detection Step. Time: 349.97s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.06s.
+
+--- Language Summary for: documents_000013.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          72870
+      - English ('en'):                       47539
+      - Non-English (specific):               23395
+      - Null/short/empty:                       705
+      - Undetermined (langdetect err):         1231
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000013.jsonl. Total time for file: 353.53s ---
+
+=============== Processing file 14/21: documents_000014.jsonl ===============
+---> Starting to read documents_000014.jsonl ...
+File Size: 172.28 MB
+<--- Finished reading documents_000014.jsonl. Read 100000 documents in 0.58s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.58s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 73575
+
+    Final count for language detection: Processed 73575/73575 abstracts.
+<--- Finished Language Detection Step. Time: 357.77s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.06s.
+
+--- Language Summary for: documents_000014.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          73575
+      - English ('en'):                       48563
+      - Non-English (specific):               23183
+      - Null/short/empty:                       821
+      - Undetermined (langdetect err):         1008
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000014.jsonl. Total time for file: 361.00s ---
+
+=============== Processing file 15/21: documents_000015.jsonl ===============
+---> Starting to read documents_000015.jsonl ...
+File Size: 172.89 MB
+<--- Finished reading documents_000015.jsonl. Read 100000 documents in 0.59s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.63s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 72628
+
+    Final count for language detection: Processed 72628/72628 abstracts.
+<--- Finished Language Detection Step. Time: 360.59s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.06s.
+
+--- Language Summary for: documents_000015.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          72628
+      - English ('en'):                       46500
+      - Non-English (specific):               24452
+      - Null/short/empty:                       741
+      - Undetermined (langdetect err):          935
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000015.jsonl. Total time for file: 363.87s ---
+
+=============== Processing file 16/21: documents_000016.jsonl ===============
+---> Starting to read documents_000016.jsonl ...
+File Size: 178.45 MB
+<--- Finished reading documents_000016.jsonl. Read 100000 documents in 0.64s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.83s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 75993
+
+    Final count for language detection: Processed 75993/75993 abstracts.
+<--- Finished Language Detection Step. Time: 364.77s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.06s.
+
+--- Language Summary for: documents_000016.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          75993
+      - English ('en'):                       49418
+      - Non-English (specific):               24548
+      - Null/short/empty:                       685
+      - Undetermined (langdetect err):         1342
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000016.jsonl. Total time for file: 368.29s ---
+
+=============== Processing file 17/21: documents_000017.jsonl ===============
+---> Starting to read documents_000017.jsonl ...
+File Size: 176.67 MB
+<--- Finished reading documents_000017.jsonl. Read 100000 documents in 0.60s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.70s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 73756
+
+    Final count for language detection: Processed 73756/73756 abstracts.
+<--- Finished Language Detection Step. Time: 359.28s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.06s.
+
+--- Language Summary for: documents_000017.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          73756
+      - English ('en'):                       46711
+      - Non-English (specific):               25021
+      - Null/short/empty:                       743
+      - Undetermined (langdetect err):         1281
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000017.jsonl. Total time for file: 362.64s ---
+
+=============== Processing file 18/21: documents_000018.jsonl ===============
+---> Starting to read documents_000018.jsonl ...
+File Size: 169.44 MB
+<--- Finished reading documents_000018.jsonl. Read 100000 documents in 0.57s.
+---> Starting Cleaning Step...
+<--- Finished Cleaning Step. Cleaned abstracts in 2.67s.
+---> Starting Language Detection Step (logging every 1000 abstracts)...
+Number of valid abstracts to process for language detection: 72201
+
+    Final count for language detection: Processed 72201/72201 abstracts.
+<--- Finished Language Detection Step. Time: 369.88s.
+---> Starting Analysis Step for this file...
+<--- Finished Analysis Step. Time: 0.09s.
+
+--- Language Summary for: documents_000018.jsonl ---
+   Total abstracts read:                     100000
+   Total non-null cleaned abstracts:          72201
+      - English ('en'):                       46663
+      - Non-English (specific):               23527
+      - Null/short/empty:                       815
+      - Undetermined (langdetect err):         1196
+      - Detection error:                          0
+   --------------------------------------
+--- Finished processing documents_000018.jsonl. Total time for file: 373.21s ---
+
+=============== Processing file 19/21: documents_000019.jsonl ===============
+---> Starting to read documents_000019.jsonl ...
+File Size: 172.03 MB
+<--- Finished reading documents_000019.jsonl. Read 100000 documents in 0.73s.
+---> Starting Cleaning Step...
