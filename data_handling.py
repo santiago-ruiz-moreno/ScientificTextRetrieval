@@ -15,12 +15,18 @@ abstracts_path = abstract_data_folder + "documents/"
 queries = pl.scan_csv(queries_path, separator = "\t", has_header=False, new_columns=["query_id", "query"])
 
 # TO BE DONE: @bubaltali @Aditiwien
-# Abstracts are in different languages. 
-# Issues when importing the JSONL files, namely "Skipping file documents_000002.jsonl due to error: got non-null value for NULL-typed column:" 
-# WORD-HANDLING FOR ABSTRACTS: 
-#  - TOKENIZATION: / AFTER TRANSLATION
-#  - STEMMING
-#  - LEMMATIZATION
+
+
+# 6 hours: (Burak | Aditi )
+# 1. Abstracts are in different languages. ()
+# 2. Issues when importing the JSONL files, namely "Skipping file documents_000002.jsonl due to error: got non-null value for NULL-typed column:" 
+
+
+# 6 Hours (Team A : Santiago | Saad | Ron   )
+# 3. WORD-HANDLING FOR ABSTRACTS: 
+# 4.  - TOKENIZATION: / AFTER TRANSLATION 
+# 5.  - STEMMING
+# 6.  - LEMMATIZATION
 
 abstract_pl_query = []
 for file in os.listdir(abstracts_path):
@@ -38,5 +44,11 @@ else:
     print("No valid abstracts were found.")
 
 
+# Queries = Abstracts (IDs.)
+# IR
+# TDF-IF (1ST Task.)
 
 
+
+
+# Nerual Network. (2nd Week.)
