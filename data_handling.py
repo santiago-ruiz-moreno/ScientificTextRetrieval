@@ -29,6 +29,10 @@ queries.collect()
 
 
 # 6 Hours (Team A : Santiago | Saad | Ron   )
+# @santiago-ruiz-moreno: I created the TF-IDF for all the abstracts
+
+
+# @ Saad | Ron  PLEASE DO: (Plus integrate the titles to the TF-IDF)
 # 3. WORD-HANDLING FOR ABSTRACTS: 
 # 4.  - TOKENIZATION: / AFTER TRANSLATION 
 # 5.  - STEMMING
