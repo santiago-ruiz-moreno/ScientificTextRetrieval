@@ -2,13 +2,16 @@ import polars as pl
 import os
 import time # Optional: To see timing
 
+
 # --- Script Start ---
 print("--- Script Start ---")
 start_time = time.time() # Optional timing
 
 # --- Setup Paths ---
 print("Setting up paths...")
-data_folder = os.getcwd()
+# @Santiago: I modified this line to use my local folder: 
+# data_folder = os.getcwd()
+data_folder = "C:/Users/jruizmor/Documents/WU/09 Courses/Advanced Information Retrieval/LonscievalDataset/"
 # Construct paths using os.path.join for cross-platform compatibility
 abstract_data_folder = os.path.join(data_folder, "longeval_sci_training_2025_abstract")
 queries_path = os.path.join(abstract_data_folder, "queries.txt")

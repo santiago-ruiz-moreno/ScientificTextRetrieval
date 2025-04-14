@@ -1,5 +1,10 @@
 import polars as pl
 import os
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import HashingVectorizer
+from incrementaltfidf import  IncrementalTfidf
+
 
 # Paths
 
@@ -13,6 +18,7 @@ abstracts_path = abstract_data_folder + "documents/"
 # Importing queries
 
 queries = pl.scan_csv(queries_path, separator = "\t", has_header=False, new_columns=["query_id", "query"])
+queries.collect()
 
 # TO BE DONE: @bubaltali @Aditiwien
 
@@ -43,12 +49,16 @@ else:
     pl_all_abstracts = []
     print("No valid abstracts were found.")
 
+## @Saad | Ron : Please incorporate Tokenization, and Stemming before this step
 
-# Queries = Abstracts (IDs.)
-# IR
-# TDF-IF (1ST Task.)
+# Initialize the incremental TF-IDF builder
+corpus_builder = IncrementalTfidf(max_features=10000)
+for list_of_abstracts in pl_all_abstracts:
+    corpus_builder.add_documents(list_of_abstracts["abstract"], doc_ids = list_of_abstracts["id"]) 
 
 
+# Build the TF-IDF matrix
+tfidf_matrix = corpus_builder.get_tfidf_matrix()
 
+corpus_builder.doc_ids
 
-# Nerual Network. (2nd Week.)
