@@ -3,7 +3,7 @@ from scipy.sparse import vstack
 from tqdm import tqdm
 
 
-# @Santiago Ruiz: This line of code iterates through each document
+# @Santiago Ruiz: These lines of code iterates through each document
 #     Creates a token with maximam 100_000 and then sees whether
 #      the abstract contains the word, and then adds a new column,
 #      and updates the counts for the tokens analyzed previously.
