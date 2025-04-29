@@ -47,9 +47,9 @@ def clean_text(text):
 
 # --- Load, Preprocess, and Add to TF-IDF ---
 documents = []
+queries = []    
 doc_ids = []
 max_docs = 100000
-
 
 for df in tqdm(pl_all_abstracts, desc="Loading documents"):
     for row in df.iter_rows(named=True):
@@ -68,9 +68,11 @@ for df in tqdm(pl_all_abstracts, desc="Loading documents"):
         break
 print(f"\n✅ Loaded and cleaned {len(documents)} documents.")
 
+
 # --- TF-IDF Processing ---
 tfidf_model = IncrementalTfidf()
 tfidf_model.add_documents(documents, doc_ids=doc_ids)
+
 
 # --- Example Output ---
 print("\n🔍 Sample TF-IDF terms from the first document:")
