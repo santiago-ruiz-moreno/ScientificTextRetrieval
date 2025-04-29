@@ -84,3 +84,5 @@ if tfidf_matrix.shape[0] > 0:
         print(f"  {feature_names[idx]}: {first_doc_vector[idx]:.4f}")
 else:
     print("TF-IDF matrix is empty.")
+    
+       
