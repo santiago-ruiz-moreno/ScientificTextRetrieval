@@ -16,12 +16,12 @@ import nltk
 
     
 # Add custom path to NLTK data
-nltk_data_path = r"C:\Users\Saad\AppData\Roaming\nltk_data"
+nltk_data_path = r"C:\Users\jruizmor\Documents\WU\09 Courses\Advanced Information Retrieval\nltk_data"
 if nltk_data_path not in nltk.data.path:
     nltk.data.path.insert(0, nltk_data_path)
 
 # Check and download required resources
-for resource in ["punkt", "stopwords", "wordnet"]:
+for resource in ["punkt", "stopwords", "wordnet","punkt_tab"]:
     try:
         nltk.data.find(resource)
     except LookupError:
@@ -42,36 +42,30 @@ def clean_text(text):
     tokens = [lemmatizer.lemmatize(word) for word in tokens]
     return " ".join(tokens)
 
-# --- Paths ---
-abstracts_path = r"C:\Users\Saad\Downloads\Porashuna TU WIEN Summer 2025\AIR\longeval_sci_training_2025_abstract\documents"
+# pl_all_abstracts is the list of DataFrames loaded from the JSONL files
+# in the importingabstracts.py script.
 
 # --- Load, Preprocess, and Add to TF-IDF ---
 documents = []
 doc_ids = []
-max_docs = 50  # Adjust for testing
+max_docs = 100000
 
-for file_name in tqdm(os.listdir(abstracts_path), desc="Loading files"):
-    if not file_name.endswith(".jsonl"):
-        continue
 
-    file_path = os.path.join(abstracts_path, file_name)
-    with open(file_path, "r", encoding="utf-8") as f:
-        for line in f:
-            if len(documents) >= max_docs:
-                break
-            try:
-                data = json.loads(line)
-                title = clean_text(data.get("title", ""))
-                abstract = clean_text(data.get("abstract", ""))
-                combined = f"{title} {abstract}".strip()
-                if combined:
-                    documents.append(combined)
-                    doc_ids.append(data.get("id", f"doc_{len(documents)}"))
-            except Exception as e:
-                print(f"❌ Error processing line: {e}")
+for df in tqdm(pl_all_abstracts, desc="Loading documents"):
+    for row in df.iter_rows(named=True):
+        if len(documents) >= max_docs:
+            break
+        try:
+            title = clean_text(row.get("title", ""))
+            abstract = clean_text(row.get("abstract", ""))
+            combined = f"{title} {abstract}".strip()
+            if combined:
+                documents.append(combined)
+                doc_ids.append(row.get("id", f"doc_{len(documents)}"))
+        except Exception as e:
+            print(f"❌ Error processing row: {e}")
     if len(documents) >= max_docs:
         break
-
 print(f"\n✅ Loaded and cleaned {len(documents)} documents.")
 
 # --- TF-IDF Processing ---

@@ -22,6 +22,10 @@ print(f"Abstract Data Folder: {abstract_data_folder}")
 print(f"Queries Path: {queries_path}") # Note: Queries are not used in this version
 print(f"Abstracts Path: {abstracts_path}")
 
+# --- Import Abstracts into List---
+abstract_pl_query = []
+
+
 # --- Define Schema ---
 # Define the expected schema for the abstract files
 # Using Utf8 (String) for IDs/dates initially is safer due to nulls and format variations
@@ -79,6 +83,8 @@ else:
                     schema=abstract_schema,
                     n_rows=5 # Read only the first 5 rows
                 )
+                pl_abstract = pl.read_ndjson(file_path).lazy()
+                abstract_pl_query.append(pl_abstract)
 
                 # Print columns and the DataFrame (which is just the head)
                 print(f"Columns in the file: {df_head.columns}")
@@ -123,3 +129,5 @@ end_time = time.time()
 print("\n--- Script End ---")
 print(f"Total execution time: {end_time - start_time:.2f} seconds")
 print("Printed head previews for individual files. No combined DataFrame was created.")
+
+pl_all_abstracts = pl.collect_all(abstract_pl_query)
