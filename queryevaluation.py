@@ -13,6 +13,7 @@ from tqdm import tqdm
 # Ensure incrementaltfidf is accessible
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from incrementaltfidf import IncrementalTfidf
+from stemming_lemmatization_tfidf import clean_text
 
 # --- NLP Preprocessing ---
 from nltk.corpus import stopwords
@@ -94,3 +95,5 @@ def add_top_5_similar_docs(queries_collected: pl.DataFrame, tfidf_matrix, docume
     )
     
 add_top_5_similar_docs(queries_collected, tfidf_model.get_tfidf_matrix(), tfidf_model.get_document_ids(), doc_id_filter_fn=lambda x: len(x) == 8)
+
+
